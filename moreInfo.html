@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+    <title>Learn More</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  
+  </head>
+  
+  <body>
+    <a href="index.html"><img src="https://cdn.glitch.com/023d07e5-4ebd-4edc-b79a-e2337abad1a2%2Foutput-onlinepngtools.png?v=1596212475272" class="center"></a>
+
+    <!-- Navigation -->
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game.html">Game</a></li>
+      <li><a href="moreInfo.html">Learn More</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+
+    </ul>
+    
+    <section>  <center><h3 style="font-size: 40px; color: white; background-color: rgb(40, 67, 10); padding: 20px;"> Why recycle?
+    </h3></center></section>
+    <section id="info">
+      <body> Studies show that deforestation and landfills make up about 25% of the global greenhouse gas emissions annually. These greenhouse gases trap heat 
+        in the earth's atmosphere, contributing to climate change. By doing the simple act of recycling, we can each make our impact on saving the planet. 
+        The benefits of recycling does not just stop there. Here are more ways recycling positively impacts the world:
+        <ul>
+          <li>Reduces amount of waste sent to landfills and incinerators, reducing carbon dioxide production</li>
+          <li>Conserves natural resources like timber, water and minerals</li>
+          <li>Prevents pollution by reducing the need to collect new materials</li>
+          <li>Helps create jobs in recycling and manufacturing</li>
+        </ul>
+    
+    <br>
+        <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://cdn.glitch.com/023d07e5-4ebd-4edc-b79a-e2337abad1a2%2Fbeach.jpg?v=1596149520929" style="width:100%">
+        <div class="text">Most household waste ends up in the ocean, polluting beaches and threatening marine life.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://cdn.glitch.com/023d07e5-4ebd-4edc-b79a-e2337abad1a2%2Fplastic-human-impact.jpg?v=1596149702421" style="width:100%">
+        <div class="text">Beach polluted by single-use plastic, such as bottles, straws, and wrappers.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://cdn.glitch.com/023d07e5-4ebd-4edc-b79a-e2337abad1a2%2Fincineration.jpg?v=1596149758947" style="width:100%">
+        <div class="text">Household trash at a landfill being burned in an incinerator.</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+  </body>
+
+  <style>
+    #do {
+      float: left;
+      border: 3px;
+      border-color: green;
+    }
+    #dont {
+      float: right;
+    }
+  </style>  
+  
+  <script>
+      var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+  </script>
+</html>
