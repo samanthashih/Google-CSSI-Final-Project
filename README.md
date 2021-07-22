@@ -1,2 +1,0 @@
-# Google-CSSI-Final-Project
- Website and educational game on importance of recycling! All code is in the branch "glitch"
